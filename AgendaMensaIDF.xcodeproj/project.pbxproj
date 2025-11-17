@@ -10,6 +10,7 @@
 		072E06D52EB0144F00CC3023 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 072E06D42EB0144F00CC3023 /* SwiftSoup */; };
 		072E06DD2EB0164D00CC3023 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 072E06DC2EB0164D00CC3023 /* KeychainAccess */; };
 		0747D7982EB028D900BAA55B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0747D7972EB028D900BAA55B /* Alamofire */; };
+		07E4EB962ECBE1DD00DF49D9 /* OAuth2 in Frameworks */ = {isa = PBXBuildFile; productRef = 07E4EB952ECBE1DD00DF49D9 /* OAuth2 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -60,6 +61,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0747D7982EB028D900BAA55B /* Alamofire in Frameworks */,
+				07E4EB962ECBE1DD00DF49D9 /* OAuth2 in Frameworks */,
 				072E06DD2EB0164D00CC3023 /* KeychainAccess in Frameworks */,
 				072E06D52EB0144F00CC3023 /* SwiftSoup in Frameworks */,
 			);
@@ -109,6 +111,7 @@
 				072E06D42EB0144F00CC3023 /* SwiftSoup */,
 				072E06DC2EB0164D00CC3023 /* KeychainAccess */,
 				0747D7972EB028D900BAA55B /* Alamofire */,
+				07E4EB952ECBE1DD00DF49D9 /* OAuth2 */,
 			);
 			productName = app;
 			productReference = 072E06C52EB013E900CC3023 /* AgendaMensaIDF.app */;
@@ -142,6 +145,7 @@
 				072E06D32EB0144F00CC3023 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
 				072E06DB2EB0164D00CC3023 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 				0747D7962EB028D900BAA55B /* XCRemoteSwiftPackageReference "Alamofire" */,
+				07E4EB942ECBE1DD00DF49D9 /* XCRemoteSwiftPackageReference "OAuth2" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 072E06C62EB013E900CC3023 /* Products */;
@@ -415,6 +419,14 @@
 				minimumVersion = 5.10.2;
 			};
 		};
+		07E4EB942ECBE1DD00DF49D9 /* XCRemoteSwiftPackageReference "OAuth2" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/p2/OAuth2.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.3.5;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -432,6 +444,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0747D7962EB028D900BAA55B /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		07E4EB952ECBE1DD00DF49D9 /* OAuth2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 07E4EB942ECBE1DD00DF49D9 /* XCRemoteSwiftPackageReference "OAuth2" */;
+			productName = OAuth2;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -35,7 +35,15 @@ struct LoginView: View {
             }
 
             Button("Se connecter") {
-                login()
+                if let vc = UIApplication.shared.windows.first?.rootViewController {
+                    OAuthManager.shared.authorize(from: vc) { success in
+                        if success {
+                            print("Utilisateur connecté !")
+                            // Charger la page mensa-idf.org comme connecté
+                            // par exemple relancer fetchMyEvents()
+                        }
+                    }
+                }
             }
             .padding()
             .frame(maxWidth: .infinity)
