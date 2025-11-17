@@ -13,7 +13,7 @@ class OAuthManager {
             "authorize_uri": "https://auth.mensa-france.net/oauth2/authorize",
             "token_uri": "https://connect.mensa.fr/realms/mensa/protocol/openid-connect/token",
             "scope": "openid profiles email",
-            "redirect_uris": ["myapp://oauth/callback"], // définir ton URL scheme
+            "redirect_uris": ["agendaMensaIDF://oauth/callback"], // définir ton URL scheme
             "secret_in_body": true,
             "verbose": true,
         ])

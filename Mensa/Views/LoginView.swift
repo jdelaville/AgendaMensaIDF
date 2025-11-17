@@ -35,7 +35,10 @@ struct LoginView: View {
             }
 
             Button("Se connecter") {
-                if let vc = UIApplication.shared.windows.first?.rootViewController {
+                if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+                   let window = windowScene.windows.first,
+                   let vc = window.rootViewController {
+                    
                     OAuthManager.shared.authorize(from: vc) { success in
                         if success {
                             print("Utilisateur connecté !")
